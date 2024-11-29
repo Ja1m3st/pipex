@@ -1,4 +1,4 @@
-## 🌟 ¿Qué es Pipex?
+# 🌟 ¿Qué es Pipex?
 Pipex es un programa que simula el comportamiento de este comando UNIX:
 
 ```bash
@@ -16,8 +16,8 @@ Ejemplo Práctico:
 ```bash
 ./pipex archivo_in "cat -e" "grep foo" archivo_out
 ```
-Es equivalente a:
 
+Es equivalente a:
 ```bash
 < archivo_in cat -e | grep foo > archivo_out
 ```
@@ -30,7 +30,7 @@ Para cumplir este objetivo, Pipex utiliza:
 - Ejecutables dinámicos: Usa execve para ejecutar comandos como un verdadero sistema UNIX.
 - Procesos (fork): Divide y conquista creando hijos que realicen tareas específicas.
 
-## 🏗️ Estructura del Proyecto
+# 🏗️ Estructura del Proyecto
 # Archivos Principales
 `pipex.c`: El corazón del programa. Controla el flujo principal y organiza los procesos.
 `pipex_utils.c`: Funciones auxiliares para manejo de errores, liberación de memoria, etc.
@@ -48,20 +48,17 @@ int main(int argc, char **argv, char **envp);
 1. Clona el repositorio o copia los archivos.
 
 2. Compila el proyecto con el Makefile:
-
 ```bash
 make
 ```
+Esto generará un ejecutable llamado pipex.
 
-3. Esto generará un ejecutable llamado pipex.
-
-Ejecuta tu programa:
-
+3. Ejecuta tu programa:
 ```bash
 ./pipex archivo_in "cmd1" "cmd2" archivo_out
 ```
-Ejemplo:
 
+Ejemplo:
 ```bash
 ./pipex input.txt "ls -l" "wc -l" output.txt
 ```
