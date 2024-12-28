@@ -59,7 +59,6 @@ Esto generará un ejecutable llamado pipex.
 ```
 ![pipex](https://github.com/user-attachments/assets/af6933ac-e8af-44f8-a4d0-92cf28d1737a)
 
-
 En caso que sea el bonus seria asi:
 ```bash
 ./pipex archivo_in "cmd1" "cmd2" "cmd3" ... archivo_out
