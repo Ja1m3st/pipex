@@ -57,10 +57,19 @@ Esto generará un ejecutable llamado pipex.
 ```bash
 ./pipex archivo_in "cmd1" "cmd2" archivo_out
 ```
+En caso que sea el bonus seria asi:
+```bash
+./pipex archivo_in "cmd1" "cmd2" "cmd3" ... archivo_out
+```
 
 Ejemplo:
 ```bash
 ./pipex input.txt "ls -l" "wc -l" output.txt
+```
+
+Ejemplo Bonus:
+```bash
+./pipex input.txt "ls -l" "grep infile" "wc -l" output.txt
 ```
 
 4. Revisa el archivo de salida:
